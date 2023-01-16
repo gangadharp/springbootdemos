@@ -1,5 +1,7 @@
 package com.example.training.manageemployees;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +16,9 @@ public class EmployeeService {
 	
 	public Employee findEmployeeById(Integer empId) {
 		return repository.findEmployeeById(empId);
+	}
+	public List<Employee> getEmployees() {
+		return repository.getEmployess();
 	}
 }
 

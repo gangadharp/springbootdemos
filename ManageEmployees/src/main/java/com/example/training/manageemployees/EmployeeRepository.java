@@ -29,6 +29,11 @@ public class EmployeeRepository {
 		return true;
 	}
 	
+	public List<Employee> getEmployess() {
+		
+		return employeeData;
+	}
+	
 	public Employee findEmployeeById(Integer empId) {
 		for(Employee emp:employeeData) {
 			if(emp.getEmpId().equals(empId))
